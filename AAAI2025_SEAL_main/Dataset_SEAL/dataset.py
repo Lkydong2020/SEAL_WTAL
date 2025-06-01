@@ -85,11 +85,11 @@ class VideoDataset:
             proposals: List of proposals for all videos in the following format:
                 [[video1_proposals], [video2_proposals], ...]
         """
-        proposals_file_test = os.path.join('./proposals4Thumos14', 'Proposals_thumos14_test.json')
+        proposals_file_test = os.path.join('./proposals4Thumos14', 'Proposals_{}_test.json'.format(self.dataset_name))
         with open(proposals_file_test, "r") as f:
             proposals_json_test = json.load(f)["results"]
         if not only_test:
-            proposals_file_train = os.path.join('./proposals4Thumos14', 'Proposals_thumos14_train.json')
+            proposals_file_train = os.path.join('./proposals4Thumos14', 'Proposals_{}_train.json'.format(self.dataset_name))
             with open(proposals_file_train, "r") as f:
                 proposals_json_train = json.load(f)["results"]
 
