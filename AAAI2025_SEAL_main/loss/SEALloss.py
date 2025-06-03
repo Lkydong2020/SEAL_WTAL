@@ -168,7 +168,7 @@ def PC_loss(proposals, prop_attn, prop_ciou, device, mask, args):
 
 def SME_loss(prop_fused_cas, prop_mask, prop_attn, features, mask, appearance_descriptors, motion_descriptors, epoch, total_epochs, args):
     """
-    Calculate the cross entropy loss with one-hot pseudo labels and decaying weight for inconsistent samples.
+    Calculate the SME_loss with one-hot pseudo labels and decaying weight for inconsistent samples.
 
     Inputs:
         prop_fused_cas: tensor of shape [B, M, C], the predicted class scores after the Backbone_Proposal
@@ -261,7 +261,7 @@ def SME_loss(prop_fused_cas, prop_mask, prop_attn, features, mask, appearance_de
 
 def SC_loss(prop_fused_cas, prop_cas_supp, prop_fused_feat_fuse, labels, epoch, total_epochs, args):
     """
-    Calculate the simplified semantic consistency loss with dynamic weighting.
+    Calculate the simplified SC_loss with dynamic weighting.
 
     Inputs:
         prop_fused_cas: tensor of shape [B, M, C], predicted class scores after the Backbone_Proposal
