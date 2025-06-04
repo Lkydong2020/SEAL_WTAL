@@ -186,12 +186,9 @@ def get_prediction_fused(vid_name, data_dict, dataset, args):
     prop_cas = F.softmax(prop_cas, dim=1)
     prop_attn = torch.sigmoid(prop_attn)
     prop_iou = torch.sigmoid(prop_iou)
-    pred_vid_score = (prop_cas * prop_attn).sum(0) / (prop_attn.sum(0) + 1e-6)
-    pred_vid_score = pred_vid_score[:-1]
 
     prop_score = prop_cas * prop_attn * prop_iou
     prop_score = prop_score.cpu().numpy()
-    pred_vid_score = pred_vid_score.cpu().numpy()
 
     pred = np.where(pred_vid_score >= args.threshold_cls)[0]
     if len(pred) == 0:
