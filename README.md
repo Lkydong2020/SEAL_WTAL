@@ -84,7 +84,7 @@ Our experimental results on the THUMOS14 dataset are as follows. Please note tha
 | Method \ mAP@IoU (%)| @0.1 | @0.2 | @0.3 | @0.4 | @0.5 | @0.6 | @0.7 |0.1-0.7(AVG)|
 |  :---:  |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | SEAL (Paper)   | 78.4 | 73.6 | 66.1 | 55.8 | 44.5 | 31.2 | 19.9 | 52.8 |
-| SEAL (Latest)  | 79.6 | 74.8 | 67.1 | 55.8 | 45.2 | 32.0 | 19.3 | 53.4 |
+| SEAL (Latest, 2025/6/26)  | 80.0 | 75.7 | 67.4 | 58.1 | 48.9 | 35.6 | 20.8 | 55.2 |
 
 ## References & Citation
 If you find this work helpful, please consider citing our paper, thank you!
