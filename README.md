@@ -79,7 +79,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --run_type test --pretrained_ckpt checkpoi
 ```
 
 ## Results
-Our experimental results on the THUMOS14 dataset are as follows. Please note that due to time constraints during submission, the result reported in the paper `(AVG(0.1:0.7): 52.8)` was not the best. Recently, `we have updated the best result to [AVG(0.1:0.7): 53.4]`, which suggests that a simple hyperparameter adjustment can lead to better performance.
+Our experimental results on the THUMOS14 dataset are as follows. Please note that due to time constraints during submission, the result reported in the paper `(AVG(0.1:0.7): 52.8)` was not the best. Recently, `we have updated the best result to [AVG(0.1:0.7): 55.2]`, which suggests that a simple hyperparameter adjustment can lead to better performance.
 
 | Method \ mAP@IoU (%)| @0.1 | @0.2 | @0.3 | @0.4 | @0.5 | @0.6 | @0.7 |0.1-0.7(AVG)|
 |  :---:  |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
